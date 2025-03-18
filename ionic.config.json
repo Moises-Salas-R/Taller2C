@@ -1,0 +1,12 @@
+{
+  "name": "TodoListApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "server": {
+    "port": 8100,
+    "host": "localhost"
+  },
+  "type": "angular"
+}
+
