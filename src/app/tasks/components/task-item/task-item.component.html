@@ -1,0 +1,11 @@
+<ion-item>
+  <ion-label>
+    <h2 [ngClass]="{ 'completed': task.done }">{{ task.title }}</h2>
+    <p>{{ task.description }}</p>
+    <p><strong>Fecha:</strong> {{ task.date | date }}</p>
+  </ion-label>
+  <ion-checkbox slot="start" [(ngModel)]="task.done" (ionChange)="toggleCompletion()"></ion-checkbox>
+  <ion-button color="danger" fill="clear" (click)="delete.emit(task.id!)">
+    <ion-icon name="trash"></ion-icon>
+  </ion-button>
+</ion-item>
